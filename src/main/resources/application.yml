@@ -1,6 +1,9 @@
 service:
   port: 8080
 
+application:
+  file-path: "/tmp/devops-dummy-app-access.txt"
+
 spring:
   security:
     user:
