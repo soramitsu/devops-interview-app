@@ -1,0 +1,22 @@
+service:
+  port: 8080
+
+spring:
+  security:
+    user:
+      name: "admin"
+      password: "admin"
+
+management:
+  server:
+    port: 8081
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  endpoint:
+    health:
+      show-details: always
+  health:
+    probes:
+      enabled: true
